@@ -1,0 +1,87 @@
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: rgb(189, 187, 187);
+}
+
+a:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+a:active {
+  color: red;
+  font-style: italic;
+}
+
+/* a => link > visited > hover >active */
+/* 
+    any type list
+        nth-child()
+        first-child()
+        last-child()
+    
+    any element
+        active
+        hover
+
+    inputs  
+        disabled
+        read-only
+        focus
+        checked
+        invalid
+        valid
+*/
+
+.btn {
+  border: 2px solid #aafbfb;
+  background-color: teal;
+  color: #aafbfb;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.btn:hover {
+  /* border: 2px dotted teal;
+  background-color: #aafbfb;
+  color: teal; */
+  /* padding: 0 16px; */
+}
+
+.btn:active {
+  background-color: rgb(244, 244, 244);
+}
+/* .list > .list-item:first-child {
+  background-color: blue;
+  color: white;
+} */
+
+.list > .list-item:nth-child(odd) {
+  background-color: blue;
+  color: white;
+}
+
+.list > .list-item:nth-child(even) {
+  background-color: #00d9ff;
+  color: blue;
+}
+/* .list > .list-item:last-child {
+  background-color: #00d9ff;
+  color: blue;
+} */
+
+.table {
+  width: 70%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/* decedent  selector*/
+.table td,
+.table th {
+  border: 2px solid rgb(249, 2, 130);
+  padding: 5px;
+  text-align: center;
+}

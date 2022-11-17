@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <!-- 
+            table ==> table
+                caption ==> title for a table (html 5)
+                thead => table thead (all heading of table)
+                tbody ==> for table data
+                tfoot
+                    tr => table row
+                        th => Table heading
+                        td => Table Data
+                        
+            studentTable (caption)
+            Sr. No | Name | Age | Gender | Roll No
+
+        # table span
+            colspan => marge multiple columns of same row 
+            row => marge multiple rows of same columns
+         -->
+    <table border="1" width="50%" cellspacing="0">
+      <caption>
+        Student Details
+      </caption>
+      <thead>
+        <tr>
+          <th>Sr. No</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Roll No.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Deepakkumar</td>
+          <td rowspan="2">12</td>
+          <td rowspan="3">Male</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Suraj</td>
+          <!-- <td>12</td> -->
+          <!-- <td>Male</td> -->
+          <td>21</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Vinod</td>
+          <td>13</td>
+          <!-- <td>Male</td> -->
+          <td>23</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Nisha</td>
+          <td>13</td>
+          <td>Female</td>
+          <td>20</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <!-- <td></td>
+          <td></td>
+          <td></td> 4 + 1 = 5 -->
+          <td colspan="4" align="right" height="0">Total:</td>
+          <td>4</td>
+        </tr>
+      </tfoot>
+    </table>
+    <!-- 4 x 4  -->
+    <table border="1" width="30%" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Header</th>
+          <th>Header</th>
+          <th>Header</th>
+          <th>Header</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="4">Row Span</td>
+          <td colspan="3" align="center">Span columns</td>
+          <!-- <td>Span columns</td>
+          <td>Span columns</td> -->
+        </tr>
+
+        <tr>
+          <!-- <td>Row Span</td> -->
+          <td colspan="2" align="center">Span columns</td>
+          <!-- <td>Span columns</td> -->
+          <td rowspan="3">Span Both</td>
+        </tr>
+        <tr>
+          <!-- <td>Row Span</td> -->
+          <td rowspan="2">Row Span</td>
+          <td>Span columns</td>
+          <!-- <td>Span Both</td> -->
+        </tr>
+        <tr>
+          <!-- <td>Row Span</td> -->
+          <!-- <td>Row Span</td> -->
+          <td height="50">Span Both</td>
+          <!-- <td>Span Both</td> -->
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

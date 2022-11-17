@@ -1,0 +1,46 @@
+/*  external/custom font */
+
+/* css rules */
+@font-face {
+  font-family: Poppins; /* set a name for font */
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: PoppinsBold; /* set a name for font */
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+
+body {
+  font-family: Poppins; /* applying the fonts */
+}
+
+.text {
+  border: 1px solid black;
+  width: 50%;
+  margin: auto;
+  padding: 5px;
+  background-color: yellow;
+
+  /* text props */
+  text-align: center;
+  /* line-height: 16px;
+  word-spacing: 32px;
+  letter-spacing: 8px; */
+
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+  /* text-decoration: overline dashed 5px; */
+  /* text-transform: capitalize; */
+
+  /*  fonts props */
+  font-size: 32px;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.text:hover {
+  white-space: unset;
+  overflow: visible;
+}

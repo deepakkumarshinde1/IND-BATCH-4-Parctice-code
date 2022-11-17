@@ -1,0 +1,5 @@
+Browser (Chrome)
+    ==> Rendering Engine (HTML + CSS) (Blink)
+    ==> JS Engine (Javascript) (V8)
+
+HTML ==> 

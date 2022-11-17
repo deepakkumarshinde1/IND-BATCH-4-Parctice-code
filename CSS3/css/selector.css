@@ -1,0 +1,32 @@
+/* 
+ element Selector eg h1{...}
+ id Selector eg #idName{...}
+ class Selector eg .className{...}
+ group Selector
+ universal Selector
+*/
+
+/* element Selector  */
+h1 {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+
+p {
+  background-color: green;
+}
+
+/* id Selector */
+#h1-id-1 {
+  background-color: red;
+}
+
+#h1-id-2 {
+  background-color: magenta;
+}
+
+/*  class Selector */
+.bg-red {
+  background-color: red;
+}

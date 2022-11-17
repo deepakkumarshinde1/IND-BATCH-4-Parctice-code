@@ -1,0 +1,76 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Poppins;
+  background-color: #ffefb3;
+}
+.card {
+  background-color: #ff6a5f;
+  width: 600px;
+  height: 350px;
+  margin: auto;
+  border-radius: 10px;
+  font-size: 0;
+  overflow: hidden;
+}
+.card-left {
+  width: 30%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 60px;
+}
+.card-right {
+  width: 70%;
+  height: inherit;
+  background-color: white;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  padding: 16px;
+  padding-top: 60px;
+}
+.card-right > .title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.text-footer {
+  margin-top: 50px;
+  text-align: right;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  margin: auto;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.image > img {
+  width: inherit;
+  height: inherit;
+}
+
+.card-left > .text {
+  display: inline-block;
+  background-color: #f75552;
+  padding: 5px;
+  margin: 10px 0;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}

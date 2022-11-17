@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>form</title>
+  </head>
+  <body>
+    <!-- <fieldset>
+      <legend><strong> Login</strong></legend>
+      <form>
+        <div>
+          <label>UserName</label>
+          <input type="text" placeholder="Enter user name" />
+        </div>
+        <div>
+          <label>Password</label>
+          <input type="password" placeholder="Enter password" />
+        </div>
+        <button>login</button>
+      </form>
+    </fieldset> -->
+
+    <!-- registration form -->
+    <!-- 
+        full name
+        dob
+       
+        address 
+        
+        gender
+        age
+        state/city
+        resume upload
+        
+ 
+      disabled => read and write 
+     -->
+    <form>
+      <div>
+        <label for="full-name">Full Name*</label>
+        <input
+          type="text"
+          placeholder="enter full name"
+          id="full-name"
+          required
+          autofocus
+        />
+      </div>
+      <div>
+        <label for="">Mobile number</label>
+        <input type="number" placeholder="Enter Mobile Number" disabled />
+      </div>
+
+      <div>
+        <label for="">Email id*</label>
+        <input type="email" placeholder="Enter Email" required />
+      </div>
+      <div>
+        <label for="">Date OF Birth</label>
+        <input type="date" placeholder="Enter Email" />
+      </div>
+      <div>
+        <label for="">Age</label>
+        <input type="number" placeholder="Enter Age" />
+      </div>
+      <div>
+        <label for="">Gender</label>
+        <div>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" checked />
+          <label for="other">Other</label>
+          <input type="radio" name="gender" id="other" />
+        </div>
+      </div>
+      <div>
+        <label for="">State</label>
+        <select>
+          <option value="">--Select State--</option>
+          <option value="">Andhra Pradesh</option>
+          <option value="">Assam</option>
+          <option value="">Bihar</option>
+          <option value="">Chhattisgarh</option>
+          <option value="">Goa</option>
+          <option value="">Gujarat</option>
+        </select>
+      </div>
+      <div>
+        <label for="">Address</label>
+        <textarea rows="5" cols="50" placeholder="enter address"></textarea>
+      </div>
+      <div>
+        <input type="checkbox" checked disabled />
+        <label for="">i agree</label>
+      </div>
+      <div>
+        <input type="file" multiple />
+        <input type="submit" />
+        <input type="reset" />
+        <input type="range" />
+      </div>
+      <button>Reg</button>
+    </form>
+  </body>
+</html>

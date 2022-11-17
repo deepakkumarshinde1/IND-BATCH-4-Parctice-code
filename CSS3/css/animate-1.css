@@ -1,0 +1,70 @@
+.btn {
+  background-color: green;
+  color: white;
+  transition-property: background-color, border-radius;
+  transition-duration: 2s;
+}
+.btn:hover {
+  background-color: red;
+  border-radius: 50px;
+}
+
+/* add animation in state we will use transition */
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  margin: auto;
+  margin-top: 50px;
+  color: white;
+
+  transition-property: transform;
+  transition-duration: 1s;
+}
+.box:hover {
+  /* move */
+  /* transform: translateX(-200px); */
+  /* transform: translateY(-200px); */
+  /* transform: translate(-100px, 100px); */
+
+  /* rotate */
+  /* transform: rotateZ(360deg); */
+
+  /* skew */
+  /* transform: skewX(20deg); */
+  /* transform: skewY(20deg); */
+
+  /* scale */
+  /* transform: scale(2); */
+  transform: translateX(100px) rotate(180deg);
+}
+/* move (top,left,bottom,right) , rotate , skew, scale */
+/* transform */
+
+.web-hosting-add {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  overflow: hidden;
+}
+.web-hosting-add > img {
+  width: 100%;
+  height: 100%;
+}
+.web-hosting-add > .off {
+  position: absolute;
+  top: 0;
+  transition: transform, opacity;
+  transition-duration: 1s;
+}
+
+.web-hosting-add:hover > .off {
+  transform: scale(1.5);
+  opacity: 0;
+}
+/* 
+    run only once
+    start ===> end
+    duplication of same effect
+*/

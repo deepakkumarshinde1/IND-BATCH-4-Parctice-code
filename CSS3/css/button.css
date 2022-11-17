@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+.btn {
+  border: none;
+  padding: 10px 40px;
+  background-color: lightcyan;
+  color: magenta;
+
+  border: 1px solid magenta;
+  /* border-radius: 30px; */
+  /* border-bottom-left-radius: 50px; */
+  /*short hand */
+  border-radius: 5px 10px 15px 20px;
+}

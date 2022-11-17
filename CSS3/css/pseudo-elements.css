@@ -1,0 +1,48 @@
+::selection {
+  background-color: black;
+  color: white;
+}
+/* selector:pseudoClass (states/event) */
+/* selector::pseudoElement (enhance element functionality) */
+
+/* 
+::first-letter
+::first-line
+
+::before{}
+::after{} 
+
+*/
+
+/* p::first-letter {
+  color: red;
+  font-size: 32px;
+  font-weight: bold;
+} */
+p {
+  text-align: center;
+  white-space: nowrap;
+  display: inline-block;
+}
+/* before & after ==> inline elements */
+p::before {
+  content: "";
+  display: inline-block;
+  background-color: green;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  margin: auto;
+  /* /* margin-right: 5px; */
+}
+
+p::after {
+  content: "";
+  display: block;
+  background: linear-gradient(90deg, red, blue, orange, green, magenta, tomato);
+  height: 5px;
+  width: 100%;
+
+  border-radius: 10px;
+  /* margin-left: 5px; */
+}

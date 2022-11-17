@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.banner {
+  width: 640px;
+  height: 360px;
+
+  margin: auto;
+  margin-top: 50px;
+  /* border: 1px solid black; */
+  font-size: 0;
+  background-color: #b4e2f9;
+
+  overflow: hidden;
+}
+
+.banner > div {
+  font-size: 16px;
+  background-color: #b4e2f9;
+}
+
+.banner > .left-blue-box {
+  height: 100%;
+  width: 30%;
+  background-color: #1f99d8;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  transform: translateX(-300px);
+  animation-name: moveBox;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+.banner > .right-white-box {
+  height: 100%;
+  width: 70%;
+  background-color: #b4e2f9;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.banner > .right-white-box > .main-bg {
+  width: 100%;
+  height: 100%;
+  transform: translateX(500px);
+  animation-name: moveBox;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+  z-index: 0;
+}
+
+.main-object {
+  position: absolute;
+  width: 280px;
+  left: 20%;
+  bottom: 0;
+  opacity: 0;
+  animation-name: getMainObject;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 9s;
+}
+
+.black-box {
+  width: 150px;
+  right: -8px;
+
+  top: -25%;
+  z-index: 3;
+  position: absolute;
+
+  animation-name: moveBlackBox;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-delay: 5s;
+}
+.black-box img {
+  width: 100%;
+}
+.black-box p {
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 5px;
+  color: white;
+}
+.add-text {
+  position: absolute;
+
+  bottom: -40%;
+  right: 0;
+  padding: 0 20px;
+
+  animation-name: moveTextBox;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-delay: 7s;
+}
+.add-text p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+.add-text button {
+  border: 1px solid blue;
+  padding: 10px 15px;
+  background-color: transparent;
+  color: white;
+
+  transition-property: border, background-color, color;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.add-text button:hover {
+  border: 1px solid blue;
+  background-color: white;
+  color: blue;
+}
+/* 4:3 16:9 */
+/* width = 1280px ? create a banner of 16:9
+height = 720 px */
+
+@keyframes moveBox {
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes moveBlackBox {
+  100% {
+    top: 10%;
+  }
+}
+
+@keyframes moveTextBox {
+  100% {
+    bottom: 25%;
+  }
+}
+
+@keyframes getMainObject {
+  100% {
+    opacity: 1;
+  }
+}

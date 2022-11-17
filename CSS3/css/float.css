@@ -1,0 +1,33 @@
+.bg-green {
+  background-color: green;
+  height: 70px;
+  overflow: hidden;
+  margin-top: 5px;
+  width: 30%;
+}
+.bg-red {
+  background-color: red;
+  height: 70px;
+  overflow: hidden;
+  margin-top: 5px;
+
+  width: 30%;
+}
+.bg-yellow {
+  background-color: yellowgreen;
+
+  margin-top: 5px;
+  height: 70px;
+  width: 30%;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+.clear-both {
+  clear: both;
+}

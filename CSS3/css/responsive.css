@@ -1,0 +1,23 @@
+/* default code for desktop */
+body {
+  background-color: red;
+}
+/* laptop ui */
+@media screen and (max-width: 1060px) and (min-width: 860px) {
+  body {
+    background-color: green;
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 860px) and (min-width: 640px) {
+  body {
+    background-color: orange;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    background-color: purple;
+  }
+}

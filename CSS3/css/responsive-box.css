@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.parent {
+  font-size: 0px;
+}
+.box {
+  font-size: 16px;
+  width: 25%;
+  height: 150px;
+  background-color: lightcoral;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+@media screen and (max-width: 1060px) and (min-width: 860px) {
+  .box {
+    width: 50%;
+    background-color: lightgreen;
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 860px) and (min-width: 640px) {
+  .box {
+    width: 50%;
+    background-color: lightgreen;
+  }
+  .add-box {
+    width: 100%;
+    background-color: lightslategray;
+  }
+}
+
+@media screen and (max-width: 470px) and (-webkit-min-device-pixel-ratio: 2){
+  .box {
+    width: 100%;
+    background-color: #c3c30b;
+
+    position: sticky;
+    position: -webkit-sticky;/* chrome, safari, opera */
+    position: -moz-sticky;/* mozilla */
+    position: -ms-sticky;/* microsoft */
+    
+  }
+}
+
+
+physical ==> 940 
+ 
+logical =>  940 / 2
+
+700 (logical) * 3 (device ratio) = physical ==>2100
+
