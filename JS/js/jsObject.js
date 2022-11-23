@@ -40,3 +40,45 @@ calc('/',2,0);
 
 calc('_',2,3);
 'invalid operation'*/
+
+calc("_", "5", 0);
+
+function calc(sign, varOne, varTwo) {
+  varOne = Number(varOne);
+  varTwo = Number(varTwo);
+
+  if (isNaN(varOne) || isNaN(varTwo)) {
+    console.error("Invalid Number Passed");
+    return false;
+  }
+
+  switch (sign) {
+    case "+":
+      var result = varOne + varTwo;
+      console.log(result);
+      break;
+
+    case "-":
+      var result = varOne - varTwo;
+      console.log(result);
+      break;
+
+    case "/":
+      if (varTwo == 0) {
+        console.error("Cant Divide by zero");
+      } else {
+        var result = varOne / varTwo;
+        console.log(result);
+      }
+      break;
+
+    case "*":
+      var result = varOne * varTwo;
+      console.log(result);
+      break;
+
+    default:
+      console.error("invalid operation");
+      break;
+  }
+}
